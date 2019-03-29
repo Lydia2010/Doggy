@@ -1,5 +1,6 @@
 
-<h3 *ngIf="dogName">{{dogName | dogAge}}</h3>
-<h4>{{now | Date: 'hh:mm:ss'}} </h4>
+<h3 *ngIf="dogName">{{dogName}}</h3>
+<p *ngIf = "dogName"><i>age:{{dogName|dogAge: {numIn:5, unit: 'months'} }}</i></p>
+<h4>{{now | date: 'hh:mm:ss'}} </h4>
  <img src={{this.dogUrl}} alt="Picture of a dog">
 
